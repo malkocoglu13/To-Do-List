@@ -1,0 +1,114 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  text-align: center;
+  padding: 5vmin;
+  flex: 1 0 auto;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: grey;
+}
+
+
+form {
+  margin-top: 50px;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+
+#date-box {
+  background-color: #DAA520;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#todo-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+#todo-list li {
+  margin-bottom: 10px;
+  font-size: 32px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+#task-input {
+  width: 70%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+#add-task-button {
+  background-color: #006400;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#add-task-button:hover {
+  background-color: #FFC107;
+}
+/* Add these styles to change the delete button color and size */
+.delete-task {
+  background-color: #e74c3c; /* Change the button color to a shade of red */
+  color: white;
+  border: none;
+  padding: 3px 8px; /* Adjust padding for a smaller button */
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px; /* Adjust font size */
+  margin-left: 5px; /* Add some space between the task text and the button */
+}
+
+.delete-task:hover {
+  background-color: #c0392b; /* Change the button color on hover */
+}

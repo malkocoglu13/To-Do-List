@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+
+  <h1>
+
+  <div id="date-box">
+    <%= new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) %>
+  </div>
+
+  <div id="todo-container">
+    <h2>To-Do List</h2>
+    <ul id="todo-list">
+      <!-- Your tasks will appear here -->
+    </ul>
+    <input type="text" id="task-input" placeholder="Add a new task">
+    <button id="add-task-button">Add Task</button>
+  </div>
+
+</h1>
+
+<script src="/js/app.js"></script>
+
+<%- include("partials/footer.ejs") %>
+  
